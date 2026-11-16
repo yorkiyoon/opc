@@ -1,0 +1,30 @@
+{
+  "rules": [
+    {
+      "name": "M1_retarget",
+      "input": "17/0",
+      "output": "117/0",
+
+      "bias_table": {
+        "width_bins": [0.060],
+        "space_bins": [0.060, 0.100, 0.200],
+        "bias": [
+          [-0.004, 0.000, 0.003, 0.005],
+          [-0.002, 0.000, 0.002, 0.004]
+        ]
+      },
+
+      "line_end": {
+        "max_width": 0.080,
+        "space_bins": [0.080],
+        "bias": [0.000, 0.010]
+      },
+
+      "mrc": {
+        "min_width": 0.040,
+        "min_space": 0.040,
+        "marker_layer": "217/0"
+      }
+    }
+  ]
+}
