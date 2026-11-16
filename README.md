@@ -52,7 +52,7 @@ s1 = EXT M1 < 0.06 PROJ  → edge -4nm        "space_bins": [0.06, ...], "bias":
 ## 알려진 한계
 
 - 계층을 flatten 해서 처리 (대용량 칩은 deep mode / tiling 도입 필요)
-- 서로 다른 bin의 edge가 만나는 convex corner는 두 bias 중 작은 쪽 기준으로 모서리가 생김
+- 서로 다른 bin의 edge가 만나는 convex corner에서 둘 다 +bias이면 b1×b2 크기만큼 모서리가 비어 깎인 형태가 됨
   (fragment 경계에서의 계단 형태는 정상 동작)
 - Manhattan 형상 기준으로 검증됨
 
